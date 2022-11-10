@@ -8,6 +8,23 @@
     <link rel="STEAM-login" href="STEAM-login.css">
 </head>
 <body>
+        <div class="CC4A-loading-wrapper" style="display:none;">
+            <div class="CC4A-loading-letters">
+                <img class="CC4A-loading-logo" src="">
+                <div class="letter-holder">
+                    <div class="l-1 letter">L</strong></div>
+                    <div class="l-2 letter">o</div>
+                    <div class="l-3 letter">a</div>
+                    <div class="l-4 letter">d</div>
+                    <div class="l-5 letter">i</div>
+                    <div class="l-6 letter">n</div>
+                    <div class="l-7 letter">g</div>
+                    <div class="l-8 letter">.</div>
+                    <div class="l-9 letter">.</div>
+                    <div class="l-10 letter">.</div>
+                </div>
+            </div>
+        </div>
     <header>
         <!--<svg -->
         <div>
@@ -19,13 +36,22 @@
             </label>
         </div>
         <svg x="0px" y="0px" width="48" height="48" viewbox="0 0 172 172" style="background: linear-gradient(rgba(245, 188, 0, 1), rgba(255, 165, 0, ), rgba())"></svg>
-            <nav>
-            <img class="STEAM-logo">
-            <ol>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ol>
-            <img class="STEAM-profile-image">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton">
+                <i class="fas fa-bars"></i>
+                <a href="C:\Users\airwo\OneDrive\Documents\CC4A_1.png" class="CC4A-logo" src=""><img src=""></a>
+                <strong>Coding Club For All</strong>
+            </label>
+            <ul>
+                <!--These will jump to parts of the page, if a nav-sidebar is implemented  -->
+                <li><a class="home" href="#">Home</a></li>
+                <li><a class="mission" href="#Mission">Mission</a></li>
+                <li><a class="projects" href="#">Projects</a></li>
+                <li><a class="contacts" href="#Contacts">Contacts</a></li>
+                <li><a class="socials" href="#Socials">Socials</a></li>
+                <li><a class="meetings" href="#Meetings">Meetings</a></li>
+            </ul>
         </nav>
     </header>
     <form class="STEAM-login-container">
@@ -35,15 +61,15 @@
         </div>
         <div class="STEAM-last-name">
             <label>Last Name:</label>
-            <input name="" type="text" required placeholder="Last name">
+            <input id="Last-name" name="" type="text" required placeholder="Last name">
         </div>
         <div class="STEAM-email">
             <label>Email:</label>
-            <input name="" type="email" required placeholder="Email address">
+            <input id="Email" name="" type="email" required placeholder="Email address">
         </div>
         <div class="STEAM-password">
             <label>Password:</label>
-            <input name="" type="password" required placeholder="Password">
+            <input id="Password"name="" type="password" required placeholder="Password" pattern="[a-z0-5]{8,}">
         </div>
         <div>
             <button class="STEAM-register-butotn"><a></a></button>
@@ -51,11 +77,9 @@
     </form>
 </body>
 <script src="STEAM-login.js"></script>
-<grammerly-desktop-intergation data-grammarly-shadow-root="true">
-    #shadow-root (open)
-        <style>
-            div.grammarly-desktop-intergration {position: absolute; width: 1px; height: 1px;padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; -moz-user-select: non; -webkit-user-select: none; user-select: none;}div.grammarly-desktop-intergration:before {content: attr(data-content);}
-        </style>
-        <div aria-label="grammarly-intergration" role="group" tabindex="-1" class="grammarly-desktop-intergration" data-content="{"mdoe":"limited","isActive":false,"isUserDisabled":false}">::before</div>
-</grammerly-desktop-intergation>
+<script>
+    $(window).on("load",function(){
+        $(".")
+    }
+</script>
 </html>
